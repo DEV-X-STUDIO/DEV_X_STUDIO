@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050817">
+<meta name="description" content="DEV X STUDIO — web development, mobile apps, graphics, thumbnails, video editing, Discord bots and hosting.">
+<title>DEV X STUDIO — Build Beyond Limits</title>
+<style>
+:root{--bg:#050817;--panel:#0a1026;--cyan:#00e5ff;--blue:#1677ff;--purple:#d42bff;--white:#f5fbff;--muted:#9db1d4}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 15% 5%,#08204b 0,transparent 36%),radial-gradient(ellipse at 88% 20%,#280b45 0,transparent 30%),var(--bg);color:var(--white);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.18;background-image:linear-gradient(#173b6c 1px,transparent 1px),linear-gradient(90deg,#173b6c 1px,transparent 1px);background-size:52px 52px;mask-image:linear-gradient(to bottom,#000,transparent 80%);z-index:-1}
+a{color:inherit;text-decoration:none}.wrap{width:min(1160px,92%);margin:auto}.nav{position:sticky;top:0;z-index:10;backdrop-filter:blur(16px);background:#050817c9;border-bottom:1px solid #1b3b68}.nav-inner{height:76px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:.08em}.brand img{width:48px;height:48px;object-fit:cover;border-radius:50%;border:1px solid #00dfff;box-shadow:0 0 18px #00cfff66}.brand span{font-size:14px}.brand b{color:var(--cyan)}.links{display:flex;gap:25px;color:#c2d4f3;font-size:13px}.links a:hover{color:var(--cyan)}.menu{display:none;background:transparent;color:white;border:1px solid #244a78;border-radius:10px;padding:9px 12px}
+.hero{min-height:650px;display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:40px;padding:70px 0 80px}.eyebrow{display:inline-flex;align-items:center;gap:9px;border:1px solid #087eaa;border-radius:99px;padding:9px 14px;color:#9cf5ff;background:#071b30;font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase}.dot{width:7px;height:7px;background:var(--cyan);border-radius:50%;box-shadow:0 0 12px var(--cyan)}h1{font-size:clamp(44px,6.4vw,82px);line-height:.97;letter-spacing:-.055em;margin:25px 0 20px;font-weight:950}h1 .gradient{background:linear-gradient(100deg,#fff 5%,#00eaff 43%,#8c7dff 70%,#f34dff);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 0 36px #00cfff18}.hero p{max-width:590px;color:var(--muted);font-size:17px;line-height:1.8}.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border-radius:12px;padding:14px 20px;font-weight:850;font-size:13px;border:1px solid #28517e;transition:.25s}.btn.primary{background:linear-gradient(110deg,#00d9ff,#326cff 60%,#bd32ff);color:#04101e;border:0;box-shadow:0 0 26px #007dff45}.btn:hover{transform:translateY(-3px);filter:brightness(1.12)}.btn.secondary{background:#091127;color:#dffaff}.hero-art{position:relative;display:grid;place-items:center}.hero-art:before{content:"";position:absolute;width:88%;aspect-ratio:1;border-radius:50%;background:conic-gradient(from 0deg,transparent,#00dfff,#765aff,#ef37ff,transparent);filter:blur(24px);opacity:.4;animation:spin 12s linear infinite}.hero-art img{position:relative;width:min(100%,470px);border-radius:26px;filter:drop-shadow(0 0 26px #00aaff45);animation:float 5s ease-in-out infinite}.orbit{position:absolute;inset:7%;border:1px solid #00dfff55;border-radius:50%;animation:spin 18s linear infinite}.orbit:after{content:"";position:absolute;top:13%;left:9%;width:9px;height:9px;background:var(--cyan);border-radius:50%;box-shadow:0 0 20px 7px #00dfff99}
+@keyframes spin{to{transform:rotate(360deg)}}@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}.ticker{border-block:1px solid #16345a;background:#071022a8;overflow:hidden;white-space:nowrap;padding:15px 0;color:#a9c8f2;font-size:11px;letter-spacing:.22em;font-weight:800}.ticker div{display:inline-block;animation:marquee 25s linear infinite}.ticker span{margin:0 28px;color:var(--cyan)}@keyframes marquee{to{transform:translateX(-50%)}}
+section{padding:90px 0}.section-head{text-align:center;max-width:690px;margin:0 auto 42px}.kicker{color:var(--cyan);font-size:11px;letter-spacing:.22em;font-weight:900;text-transform:uppercase}.section-head h2{font-size:clamp(30px,4.3vw,48px);letter-spacing:-.04em;margin:12px 0}.section-head p{color:var(--muted);line-height:1.7}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.service{position:relative;overflow:hidden;min-height:210px;padding:24px;border:1px solid #1b3a67;border-radius:18px;background:linear-gradient(145deg,#0c1730d9,#080d1d);transition:.3s}.service:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 0 0,#00dfff17,transparent 60%);pointer-events:none}.service:hover{transform:translateY(-6px);border-color:#00dfff;box-shadow:0 12px 35px #006aff1e}.icon{width:48px;height:48px;display:grid;place-items:center;border:1px solid #167bb0;background:#071c32;border-radius:14px;color:var(--cyan);font-size:23px;box-shadow:inset 0 0 20px #00cfff12}.service h3{margin:20px 0 8px;font-size:16px}.service p{margin:0;color:var(--muted);font-size:13px;line-height:1.65}.about{display:grid;grid-template-columns:.85fr 1.15fr;gap:55px;align-items:center}.about-card{padding:28px;border:1px solid #234778;border-radius:22px;background:linear-gradient(145deg,#0b1833,#090d1c);box-shadow:0 0 50px #005dff12}.about-card img{display:block;width:100%;max-width:330px;margin:auto;border-radius:18px}.about h2{font-size:clamp(30px,4vw,46px);line-height:1.08;margin:13px 0}.about p{color:var(--muted);line-height:1.8}.checks{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:24px}.check{font-size:13px;color:#d9e8ff}.check b{color:var(--cyan);margin-right:7px}.contact{padding:0 0 100px}.contact-box{position:relative;overflow:hidden;text-align:center;padding:55px 25px;border:1px solid #28548a;border-radius:26px;background:radial-gradient(ellipse at 50% 0,#112b55,#090e21 70%)}.contact-box:after{content:"";position:absolute;width:450px;height:2px;background:linear-gradient(90deg,transparent,var(--cyan),var(--purple),transparent);top:0;left:calc(50% - 225px);box-shadow:0 0 25px var(--cyan)}.contact-box h2{font-size:clamp(30px,5vw,52px);margin:0 0 12px}.contact-box p{color:var(--muted);margin:0 auto 25px;max-width:570px;line-height:1.7}.contact-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.footer{border-top:1px solid #17345a;padding:24px 0;color:#8198bd;font-size:12px}.footer-inner{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}.footer strong{color:#d9faff}
+@media(max-width:900px){.hero{grid-template-columns:1fr;text-align:center;padding-top:55px;gap:30px}.hero p{margin-inline:auto}.actions{justify-content:center}.hero-art img{width:min(82%,390px)}.grid{grid-template-columns:repeat(2,1fr)}.about{grid-template-columns:1fr;gap:30px}.about-card{max-width:440px;margin:auto}.links{display:none}.menu{display:block}.links.open{display:flex;position:absolute;top:76px;left:0;right:0;background:#070d20;flex-direction:column;padding:20px 5%;border-bottom:1px solid #1b3b68}.nav-inner{position:relative}}
+@media(max-width:520px){.grid{grid-template-columns:1fr}.service{min-height:175px}.checks{grid-template-columns:1fr}.hero{min-height:auto}.brand span{font-size:12px}section{padding:65px 0}.contact-box{padding:42px 18px}}
+
+/* DEV X STUDIO polish update */
+:root{scroll-padding-top:86px}
+::selection{background:#00e5ff55;color:#fff}
+.btn,.service,.brand img,.icon{will-change:transform}
+.btn:focus-visible,a:focus-visible,button:focus-visible{outline:2px solid var(--cyan);outline-offset:4px}
+.service{isolation:isolate}
+.service:after{content:"";position:absolute;inset:-1px;border-radius:inherit;padding:1px;background:linear-gradient(135deg,#00e5ff80,transparent 38%,#d42bff70);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;opacity:0;transition:opacity .3s;pointer-events:none}
+.service:hover:after{opacity:1}
+.hero-art img{border:1px solid #2a6d9c55;box-shadow:0 0 0 8px #00dfff08,0 0 55px #00aaff22}
+.brand img{transition:transform .35s,box-shadow .35s}
+.brand:hover img{transform:rotate(-5deg) scale(1.05);box-shadow:0 0 25px #00cfff99}
+.section-head h2 .gradient,.about h2 .gradient,.contact-box h2 .gradient{background-size:200% auto;animation:gradientShift 7s ease infinite}
+@keyframes gradientShift{0%,100%{background-position:0% center}50%{background-position:100% center}}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.ticker:hover div{animation-play-state:paused}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
+@media(max-width:520px){.nav-inner{height:68px}.links.open{top:68px}.hero-art:before{filter:blur(15px)}.eyebrow{font-size:9px;letter-spacing:.1em}h1{font-size:clamp(42px,14vw,64px)}.hero p{font-size:15px}.btn{padding:13px 16px}.ticker{font-size:10px}}
+
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap nav-inner">
+<a class="brand" href="#home"><img src="assets/dev-x-studio-logo.png" alt="DEV X STUDIO logo"><span>DEV <b>X</b> STUDIO</span></a>
+<nav class="links" id="navlinks"><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+<button class="menu" id="menu" aria-label="Toggle navigation">☰ Menu</button>
+</div></header>
+<main id="home">
+<div class="wrap hero">
+<div>
+<div class="eyebrow"><span class="dot"></span> Creative tech • Digital services</div>
+<h1>BUILD<br><span class="gradient">BEYOND</span><br>LIMITS.</h1>
+<p>We turn bold ideas into powerful digital experiences. From websites and mobile apps to eye-catching graphics, smart Discord bots, and video edits — your vision gets a studio-level finish.</p>
+<div class="actions"><a class="btn primary" href="#contact">✦ Start a project <span>↗</span></a><a class="btn secondary" href="#services">Explore services ↓</a></div>
+</div>
+<div class="hero-art"><div class="orbit"></div><img src="assets/dev-x-studio-logo.png" alt="DEV X STUDIO neon logo"></div>
+</div>
+<div class="ticker"><div>WEB DEVELOPMENT <span>✦</span> MOBILE APPS <span>✦</span> GRAPHICS DESIGN <span>✦</span> DISCORD BOTS <span>✦</span> VIDEO EDITING <span>✦</span> WEB HOSTING <span>✦</span> THUMBNAILS <span>✦</span> CUSTOM SERVICES <span>✦</span> WEB DEVELOPMENT <span>✦</span> MOBILE APPS <span>✦</span> GRAPHICS DESIGN <span>✦</span> DISCORD BOTS <span>✦</span></div></div>
+<section id="services"><div class="wrap">
+<div class="section-head"><div class="kicker">What we do</div><h2>One studio. <span class="gradient">Many possibilities.</span></h2><p>Digital services designed to make your brand stand out, work smarter, and grow online.</p></div>
+<div class="grid">
+<article class="service"><div class="icon">⌘</div><h3>Web Development</h3><p>Modern, responsive websites built to look sharp on every screen.</p></article>
+<article class="service"><div class="icon">▣</div><h3>Mobile App Development</h3><p>App concepts and experiences built around your users and goals.</p></article>
+<article class="service"><div class="icon">✎</div><h3>Graphics Design</h3><p>Visual identities, promotional creatives, and digital artwork.</p></article>
+<article class="service"><div class="icon">▧</div><h3>Thumbnails Design</h3><p>Bold, clickable thumbnails that give your content a strong first look.</p></article>
+<article class="service"><div class="icon">▶</div><h3>Video Editing</h3><p>Engaging edits, reels, intros, and polished video content.</p></article>
+<article class="service"><div class="icon">⌘</div><h3>Discord Bot Development</h3><p>Custom server utilities, automations, and community features.</p></article>
+<article class="service"><div class="icon">◎</div><h3>Web Hosting & Setup</h3><p>Help getting your website online with a clean setup.</p></article>
+<article class="service"><div class="icon">⚙</div><h3>Custom Services</h3><p>Have a unique idea? Let's shape it into a practical digital solution.</p></article>
+</div></div></section>
+<section id="about"><div class="wrap about">
+<div class="about-card"><img src="assets/dev-x-studio-logo.png" alt="DEV X STUDIO emblem"></div>
+<div><div class="kicker">About the studio</div><h2>Built for creators.<br><span class="gradient">Made to stand out.</span></h2><p>DEV X STUDIO brings creativity and technology together. Whether you're launching a brand, building a community, or creating content, we help turn your ideas into a polished digital presence.</p><div class="checks"><div class="check"><b>✦</b> Modern visual style</div><div class="check"><b>✦</b> Responsive layouts</div><div class="check"><b>✦</b> Creative-first thinking</div><div class="check"><b>✦</b> Tailored solutions</div></div></div>
+</div></section>
+<section class="contact" id="contact"><div class="wrap"><div class="contact-box"><div class="kicker">Have a project in mind?</div><h2>Let's make it <span class="gradient">happen.</span></h2><p>Tell us what you're building. Reach out through your preferred channel and let's discuss your next digital project.</p><div class="contact-actions"><a class="btn primary" href="#" id="discord-link" target="_blank" rel="noopener">Join us on Discord ↗</a><a class="btn secondary"
+   href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=devxstudiohelp@gmail.com&amp;su=DEV%20X%20STUDIO%20Inquiry"
+   id="email-link" target="_blank" rel="noopener">
+   ✉ devxstudiohelp@gmail.com ↗
+</a></div></div></div></section>
+</main>
+<footer class="footer"><div class="wrap footer-inner"><span>© <span id="year"></span> <strong>DEV X STUDIO</strong>. All rights reserved.</span><span>Designed with <strong>⚡ neon energy</strong>.</span></div></footer>
+<script>
+/* CUSTOMIZE THESE TWO VALUES before sharing your site publicly. */
+const DISCORD_INVITE_URL = "https://discord.gg/pnxAr9Ms3k";
+const CONTACT_EMAIL = "devxstudiohelp@gmail.com";
+
+const menu=document.getElementById('menu'), links=document.getElementById('navlinks');
+menu.addEventListener('click',()=>{
+  const isOpen=links.classList.toggle('open');
+  menu.setAttribute('aria-expanded',String(isOpen));
+});
+menu.setAttribute('aria-expanded','false');
+links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>links.classList.remove('open')));
+document.getElementById('year').textContent=new Date().getFullYear();
+
+const discordButton=document.getElementById('discord-link');
+if(DISCORD_INVITE_URL.startsWith('https://discord.gg/') || DISCORD_INVITE_URL.startsWith('https://discord.com/invite/')){
+  discordButton.href=DISCORD_INVITE_URL;
+}else{
+  discordButton.href='https://discord.com/';
+  discordButton.addEventListener('click',event=>{
+    event.preventDefault();
+    alert('Add your Discord invite link in index.html first.');
+  });
+}
+const emailButton=document.getElementById('email-link');
+const CONTACT_EMAIL = 'devxstudiohelp@gmail.com';
+emailButton.href = 'https://mail.google.com/mail/?view=cm&fs=1&to='
+  + encodeURIComponent(CONTACT_EMAIL)
+  + '&su=' + encodeURIComponent('DEV X STUDIO Inquiry');
+emailButton.target = '_blank';
+emailButton.rel = 'noopener';
+emailButton.textContent = '✉ ' + CONTACT_EMAIL + ' ↗';
+
+const revealItems=document.querySelectorAll('.service,.section-head,.about-card,.about>div,.contact-box');
+revealItems.forEach(el=>el.classList.add('reveal'));
+if('IntersectionObserver' in window){
+  const observer=new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target);}
+    });
+  },{threshold:0.12});
+  revealItems.forEach(el=>observer.observe(el));
+}else{revealItems.forEach(el=>el.classList.add('visible'));}
+</script>
+</body>
+</html>
